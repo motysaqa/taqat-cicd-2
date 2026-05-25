@@ -10,4 +10,8 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
+app.get('/render', (req, res) => {
+  res.json({ status: 'hello this is render.com ' });
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
